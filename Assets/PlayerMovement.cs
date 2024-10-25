@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 5f;
+
     private Rigidbody2D rb;
     private int jumpCount = 0; // Contador de saltos
     public int maxJumps = 2; // Número máximo de saltos permitidos
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCount++;
             isGrounded = false; // Desactiva el estado de suelo al saltar
-        }
+        } 
     }
 
     // Detecta colisión con el suelo
