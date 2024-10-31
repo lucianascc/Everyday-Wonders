@@ -13,9 +13,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false; // Indica si el personaje está en el suelo
      private bool facingRight = true; // Indica la dirección del personaje
 
+     private Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator= GetComponent<Animator>();
     }
 
     void Update()
