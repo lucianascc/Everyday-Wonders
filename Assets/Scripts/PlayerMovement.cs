@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
      private bool facingRight = true; // Indica la dirección del personaje
 
      private Animator animator;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
